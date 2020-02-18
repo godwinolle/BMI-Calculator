@@ -20,15 +20,19 @@ form.addEventListener('submit', e =>{
 
     if(bmi < 18.5){
         bmiRange = "Underweight";
+        result.style.backgroundColor = 'yellow';
     }
     else if(bmi > 18.5 && bmi < 25){
         bmiRange = "Normal";
+        result.style.backgroundColor = 'green';
     }
     else if(bmi > 25){
         bmiRange = "Overweight";
+        result.style.backgroundColor = 'red';
     }
     else if(bmi > 30){
         bmiRange = "Obese";
+        result.style.backgroundColor = 'red';
     }
 
     console.log(`BMI: ${bmi}`);
